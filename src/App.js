@@ -1,22 +1,26 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./Components/Navbar";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import GithubCalenderC from "./Components/GithubCalender";
+import { Box } from "@chakra-ui/react";
 
 function App() {
   return (
-    <div className="App">
-      <header id="nav-menu">
-        <div>yakshith</div>
-        <ul>
-          <li id="home">home</li>
-          <li id="about" class="about section">
-            about
-          </li>
-          <li id="skills">skills</li>
-          <li id="projects">projects</li>
-          <li id="contact">contact</li>
-        </ul>
-      </header>
-    </div>
+    <Box maxW={"100vw"}>
+      <Navbar />
+      <Box maxWidth={{ base: "96vw", lg: "90vw" }} margin="auto">
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <GithubCalenderC />
+      </Box>
+      <Contact />
+    </Box>
   );
 }
 
