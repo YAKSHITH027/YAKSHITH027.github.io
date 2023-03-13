@@ -62,6 +62,7 @@ const Projects = () => {
                     return (
                       <Code
                         margin={"2px"}
+                        key={item}
                         borderRadius="md"
                         colorScheme="teal"
                         children={item}
