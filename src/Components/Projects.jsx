@@ -1,45 +1,20 @@
 import {
   Box,
   Button,
+  Code,
   Flex,
   Grid,
   Heading,
   Image,
+  Link,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { GrDeploy } from "react-icons/gr";
+import { projectsList } from "../utils/Data/Projects";
 
 const Projects = () => {
-  const projectsList = [
-    {
-      id: 1,
-      name: "name",
-      liveLink: "s",
-      githubLink: "",
-      image: "",
-    },
-    {
-      id: 2,
-      name: "name",
-      liveLink: "s",
-      githubLink: "",
-      image: "",
-    },
-    {
-      id: 3,
-      name: "name",
-      liveLink: "s",
-      githubLink: "",
-      image: "",
-    },
-    {
-      id: 4,
-      name: "name",
-      liveLink: "s",
-      githubLink: "",
-      image: "",
-    },
-  ];
   return (
     <Box minH={"10rem"} id="projects" my="2rem" mb="4rem">
       <Heading mb={"1rem"} textAlign={"center"}>
@@ -62,15 +37,70 @@ const Projects = () => {
               borderRadius={"9px"}
               key={item.id}
             >
-              <Box height="200px" width="300px">
-                <Image src="" />
+              <Box height="240px" width="full" mb="6px">
+                <Image
+                  src={item.image}
+                  borderRadius="md"
+                  height={"100%"}
+                  width="100%"
+                />
               </Box>
-              <Flex justify="space-between">
-                <Text className="project-title">name</Text>
-                <Text className="project-description">desc</Text>
-                <Text className="project-tech-stack">desc</Text>
-                <Button className="project-deployed-link">Demo</Button>
-                <Button className="project-github-link">Code</Button>
+              <Flex flexDir={"column"}>
+                <Box>
+                  <Text
+                    className="project-title"
+                    fontSize={"1.1rem"}
+                    textTransform="capitalize"
+                    pl={"4px"}
+                    my="4px"
+                  >
+                    {item.name}
+                  </Text>
+                </Box>
+                <Flex textTransform={"capitalize"}>
+                  {item.techStacks.map((item) => {
+                    return (
+                      <Code
+                        margin={"2px"}
+                        borderRadius="md"
+                        colorScheme="teal"
+                        children={item}
+                      />
+                    );
+                  })}
+                </Flex>
+                <Text
+                  className="project-description"
+                  px={"3px"}
+                  letterSpacing="0.7px"
+                  my={"7px"}
+                >
+                  {item.desc}
+                </Text>
+                <Flex justify={"space-between"} px="0.2rem">
+                  <Link href={item.liveLink} isExternal>
+                    <Button
+                      className="project-deployed-link"
+                      colorScheme={"teal"}
+                    >
+                      Deployed Link{" "}
+                      <Text as="span" ml="4px">
+                        <GrDeploy />
+                      </Text>
+                    </Button>
+                  </Link>
+                  <Link href={item.githubLink} isExternal>
+                    <Button
+                      className="project-github-link"
+                      colorScheme={"teal"}
+                    >
+                      Github
+                      <Text as="span" ml="4px">
+                        <FaGithub />
+                      </Text>
+                    </Button>
+                  </Link>
+                </Flex>
               </Flex>
             </Box>
           );

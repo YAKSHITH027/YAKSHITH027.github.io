@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Heading, Image, Link } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Link } from "@chakra-ui/react";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 
@@ -8,7 +8,16 @@ const GithubCalenderC = () => {
       <Heading mb="2rem" textAlign={"center"}>
         Github Stats
       </Heading>
-      <Box overflowX={"scroll"}>
+      <Box
+        my={"2rem"}
+        px={{ base: "1rem", lg: "none" }}
+        overflowX={"scroll"}
+        sx={{
+          "::-webkit-scrollbar": {
+            display: "none",
+          },
+        }}
+      >
         <Box width="1000px" margin={"auto"}>
           <GitHubCalendar
             username="YAKSHITH027"
@@ -16,7 +25,7 @@ const GithubCalenderC = () => {
           />
         </Box>
       </Box>
-      {/* <Flex justify={"center"}></Flex> */}
+
       <Flex
         flexDir={{ base: "column", lg: "row" }}
         margin={"1rem"}

@@ -7,6 +7,7 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import GithubCalenderC from "./Components/GithubCalender";
 import { Box } from "@chakra-ui/react";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <GithubCalenderC />
       </Box>
       <Contact />
+      <Footer />
     </Box>
   );
 }

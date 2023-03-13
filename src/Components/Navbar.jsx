@@ -11,12 +11,21 @@ import React from "react";
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 import Sidebar from "./Sidebar";
 import { AiOutlineDownload } from "react-icons/ai";
-
+import resume from "../utils/Resume/P_Yakshith_Resume.pdf";
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  console.log(colorMode);
+
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noreferrer");
+  };
   return (
-    <Box id="nav-menu" pos={"sticky"} top="0" textTransform={"capitalize"}>
+    <Box
+      id="nav-menu"
+      pos={"sticky"}
+      top="0"
+      textTransform={"capitalize"}
+      zIndex="1000"
+    >
       <Flex
         justify={"space-between"}
         height="4rem"
@@ -58,16 +67,19 @@ const Navbar = () => {
           <Link href="#contact" className="nav-link contact">
             contact
           </Link>
-          <Button
-            className="nav-link resume"
-            colorScheme={"teal"}
-            id="resume-button-1"
-          >
-            Resume
-            <Text as="span" ml={"2"}>
-              <AiOutlineDownload fontSize={"1.2rem"} />
-            </Text>
-          </Button>
+
+          <Link href={resume} download onClick={() => openInNewTab(resume)}>
+            <Button
+              id="resume-button-1"
+              width="max-content"
+              colorScheme={"teal"}
+            >
+              Resume
+              <Text as="span" ml={"2"}>
+                <AiOutlineDownload fontSize={"1.2rem"} />
+              </Text>
+            </Button>
+          </Link>
           <Button onClick={toggleColorMode}>
             {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
           </Button>

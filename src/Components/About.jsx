@@ -1,5 +1,14 @@
-import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Image,
+  Link,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 const About = () => {
   return (
@@ -10,34 +19,33 @@ const About = () => {
       flexDir={"column"}
       justify={"center"}
       align="center"
-      paddingTop={"2rem"}
+      paddingTop={{ base: "2rem", lg: "0" }}
     >
       <Heading mb={"3rem"}>About me</Heading>
       <Flex
         height={"90%"}
         justify="center"
+        alignItems={"center"}
         gap="3rem"
         borderRadius={"1rem"}
         flexDir={{ base: "column", lg: "row" }}
-        width={{ base: "100%", lg: "70%" }}
-        padding={{ base: "2px", lg: "2rem" }}
+        width={{ base: "100%", lg: "80%" }}
+        padding={{ base: "2px", lg: "2.4rem" }}
         className="about-shadow"
         py={"1rem"}
       >
         <Flex
-          // height={{ base: "30%", lg: "100%" }}
           height={{ base: "300px", lg: "100%" }}
-          width={{ base: "100%", lg: "30%" }}
+          width={{ base: "100%", lg: "25%" }}
           justify={"center"}
           align="center"
-          // bg="white"
         >
           <Image
             className="home-img"
             src={
               "https://i.ibb.co/ZHY7H9g/1661791218027-1-1-removebg-preview.png"
             }
-            height={{ base: "100%", lg: "100%" }}
+            height="100%"
             borderRadius={"50%"}
           />
         </Flex>
@@ -47,14 +55,15 @@ const About = () => {
           justify={"center"}
           textTransform="capitalize"
           gap="3"
-          height="100%"
+          padding="5px"
+          height={{ base: "450px", md: "300px", lg: "100%" }}
           width={{ base: "100%", lg: "70%" }}
         >
           <Flex
             justify={"space-between"}
             flexDir={{ base: "column", md: "row" }}
             gap="2"
-            width="80%"
+            width="93%"
           >
             <Flex
               justify={"center"}
@@ -79,7 +88,7 @@ const About = () => {
               width={{ base: "full", md: "16rem" }}
               gap="1"
             >
-              <Text>7+ Major Projects</Text>
+              <Text>6+ Major Projects</Text>
               <Text>30+ Mini Projects</Text>
             </Flex>
             <Flex
@@ -101,14 +110,24 @@ const About = () => {
               textAlign={"center"}
               width="80%"
               margin={"auto"}
-              id="#user-detail-intro"
+              id="user-detail-intro"
             >
-              An aspiring Full Stack Developer, that enjoys every part of his
-              work, from working in the FrontEnd or Backend, to communicating
-              and collaborating, with different people
+              Hello! I'm Yakshith, a full stack developer with a passion for
+              creating innovative and efficient solutions. I specialize in
+              developing web applications and have experience in both front-end
+              and back-end development.
             </Text>
+            <Flex justify={"center"} mt="1.9rem">
+              <Link href="#projects">
+                <Button colorScheme={"cyan"} textAlign="center">
+                  My Projects{" "}
+                  <Text as="span" pl={"4px"}>
+                    <AiOutlineArrowDown />
+                  </Text>
+                </Button>
+              </Link>
+            </Flex>
           </Box>
-          <Button>Projects</Button>
         </Flex>
       </Flex>
     </Flex>

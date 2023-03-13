@@ -4,6 +4,7 @@ import {
   Flex,
   FormControl,
   FormLabel,
+  Grid,
   Heading,
   Input,
   Link,
@@ -17,8 +18,8 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const Contact = () => {
   return (
-    <Box id="contact" minH={"10rem"} bg="blackAlpha.300" pb={"3rem"}>
-      <Box py="1rem">
+    <Box id="contact" minH={"30rem"} bg="blackAlpha.300" pb={"3rem"}>
+      <Box pt="1rem" pb="2rem">
         <Heading textAlign={"center"}>Contact me</Heading>
       </Box>
 
@@ -29,36 +30,38 @@ const Contact = () => {
         width="full"
       >
         <Flex
-          width={{ base: "90%", lg: "30%" }}
+          width={{ base: "90%", lg: "40%" }}
           align={"center"}
           justify="center"
         >
-          <Flex flexDir={"column"} gap="4">
-            <Link>
+          <Grid templateColumns={"repeat(2,1fr)"} gap="4">
+            <Link
+              href="https://www.linkedin.com/in/p-yakshith-kulal-490b34227/"
+              isExternal
+            >
               <Flex gap="2">
                 <ImLinkedin fontSize={"1.6rem"} />
                 <Text id="contact-linkedin">Linkedin</Text>
               </Flex>
             </Link>
-            <Link>
+            <Link href="https://github.com/YAKSHITH027" isExternal>
               <Flex gap="2">
                 <FaGithub fontSize={"1.6rem"} />
                 <Text id="contact-github">Github</Text>
               </Flex>
             </Link>
-            <Link>
+            <Link href="mailto:yakshith027@gmail.com" isExternal>
               <Flex gap="2">
                 <HiOutlineMail fontSize={"1.6rem"} />
                 <Text id="contact-email">Email</Text>
               </Flex>
             </Link>
-            <Link>
-              <Flex gap="2">
-                <ImMobile fontSize={"1.6rem"} />
-                <Text id="contact-phone">+91 8496080939</Text>
-              </Flex>
-            </Link>
-          </Flex>
+
+            <Flex gap="2">
+              <ImMobile fontSize={"1.6rem"} />
+              <Text id="contact-phone">+91 8496080939</Text>
+            </Flex>
+          </Grid>
         </Flex>
         <Box
           width={{ base: "95%", lg: "30%" }}
