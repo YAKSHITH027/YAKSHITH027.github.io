@@ -13,6 +13,7 @@ function App() {
   return (
     <Box maxW={"100vw"}>
       <Navbar />
+
       <Box maxWidth={{ base: "96vw", lg: "90vw" }} margin="auto">
         <Home />
         <About />

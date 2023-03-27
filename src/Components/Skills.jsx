@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { backendTechs, frontTechs } from "../utils/Data/Skills";
-
+import Zoom from "react-reveal/Zoom";
 const Skills = () => {
   return (
     <Box id="skills">
@@ -38,26 +38,28 @@ const Skills = () => {
           >
             {frontTechs.map((item) => {
               return (
-                <Flex
-                  key={item.id}
-                  className="icon-shadow skills-card"
-                  padding="4px"
-                  paddingBottom={"2px"}
-                  px="0.5rem"
-                  borderRadius={"7px"}
-                  flexDir="column"
-                  justify={"center"}
-                  boxShadow={item.boxShadow}
-                  align="center"
-                  transition={"all 0.3s "}
-                >
-                  <Image
-                    width="60px"
-                    className="skills-card-img"
-                    src={item.image}
-                  />
-                  <Text className="skills-card-name">{item.name}</Text>
-                </Flex>
+                <Zoom>
+                  <Flex
+                    key={item.id}
+                    className="icon-shadow skills-card"
+                    padding="4px"
+                    paddingBottom={"2px"}
+                    px="0.5rem"
+                    borderRadius={"7px"}
+                    flexDir="column"
+                    justify={"center"}
+                    boxShadow={item.boxShadow}
+                    align="center"
+                    transition={"all 0.3s "}
+                  >
+                    <Image
+                      width="60px"
+                      className="skills-card-img"
+                      src={item.image}
+                    />
+                    <Text className="skills-card-name">{item.name}</Text>
+                  </Flex>
+                </Zoom>
               );
             })}
           </Grid>
@@ -78,26 +80,28 @@ const Skills = () => {
           >
             {backendTechs.map((item) => {
               return (
-                <Flex
-                  key={item.id}
-                  className="icon-shadow skills-card"
-                  padding="4px"
-                  paddingBottom={"2px"}
-                  px="0.5rem"
-                  borderRadius={"7px"}
-                  flexDir="column"
-                  justify={"center"}
-                  boxShadow={item.boxShadow}
-                  align="center"
-                  transition={"all 0.3s "}
-                >
-                  <Image
-                    width="60px"
-                    className="skills-card-img"
-                    src={item.image}
-                  />
-                  <Text className="skills-card-name">{item.name}</Text>
-                </Flex>
+                <Zoom>
+                  <Flex
+                    key={item.id}
+                    className="icon-shadow skills-card"
+                    padding="4px"
+                    paddingBottom={"2px"}
+                    px="0.5rem"
+                    borderRadius={"7px"}
+                    flexDir="column"
+                    justify={"center"}
+                    boxShadow={item.boxShadow}
+                    align="center"
+                    transition={"all 0.3s "}
+                  >
+                    <Image
+                      width="60px"
+                      className="skills-card-img"
+                      src={item.image}
+                    />
+                    <Text className="skills-card-name">{item.name}</Text>
+                  </Flex>
+                </Zoom>
               );
             })}
           </Grid>
