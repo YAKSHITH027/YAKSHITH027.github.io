@@ -47,14 +47,14 @@ const Home = () => {
               }
               colorScheme={'teal'}
             >
-              <Link href={resume} download id='resume-link-2'>
+              <a href={resume} download id='resume-link-2'>
                 <Flex>
                   <Text as='span'>Resume</Text>
                   <Text as='span' ml={'2'}>
                     <AiOutlineDownload fontSize={'1.2rem'} />
                   </Text>
                 </Flex>
-              </Link>
+              </a>
             </Button>
             <Flex gap='3'>
               <Link

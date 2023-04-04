@@ -78,7 +78,7 @@ const Navbar = () => {
                 )
               }
             >
-              <Link
+              <a
                 href={resume}
                 download
                 className='nav-link resume'
@@ -90,7 +90,7 @@ const Navbar = () => {
                     <AiOutlineDownload fontSize={'1.2rem'} />
                   </Text>
                 </Flex>
-              </Link>
+              </a>
             </Button>
             <Button onClick={toggleColorMode}>
               {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
