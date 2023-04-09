@@ -65,7 +65,7 @@ const Navbar = () => {
               projects
             </Link>
             <Link href='#contact' className='nav-link contact'>
-              contactt
+              contact
             </Link>
 
             <Button

@@ -9,7 +9,7 @@ import resume from '../utils/Resume/P_Yakshith_Resume.pdf'
 import Fade from 'react-reveal/Fade'
 import Zoom from 'react-reveal/Zoom'
 import openInNewTab from '../utils/newTabOpener'
-
+import gif from '../utils/Images/gif.gif'
 const Home = () => {
   return (
     <Flex
@@ -92,7 +92,7 @@ const Home = () => {
           className='profile'
         >
           <Image
-            src='https://camo.githubusercontent.com/86a3b6db470f1a0429f7355c08d1edabf3d2c804/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f312a495247486d69477361313673746564517649615a66772e676966'
+            src={gif}
             className='imageShadow'
             height={{ base: '196px', md: '280px', lg: '396px' }}
             width={{ base: '312px', md: '490px', lg: '630px' }}

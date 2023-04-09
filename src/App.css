@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
 * {
   padding: 0;
@@ -41,12 +41,13 @@ html {
 .about-shadow {
   -webkit-box-shadow: 0px 0px 35px 0px rgba(136, 179, 178, 1);
   -moz-box-shadow: 0px 0px 35px 0px rgba(136, 179, 178, 1);
-  box-shadow: 0px 0px 35px 0px rgba(136, 179, 178, 1);
+  box-shadow: 0px 0px 35px 0px #c0c1cf;
 }
 .info-shadow {
-  -webkit-box-shadow: inset 0px 0px 35px 0px rgba(162, 189, 188, 1);
+  /* -webkit-box-shadow: inset 0px 0px 35px 0px rgba(162, 189, 188, 1);
   -moz-box-shadow: inset 0px 0px 35px 0px rgba(162, 189, 188, 1);
-  box-shadow: inset 0px 0px 35px 0px rgba(162, 189, 188, 1);
+  box-shadow: inset 0px 0px 35px 0px rgba(162, 189, 188, 1); */
+  background-color: #2e2f47;
 }
 .icon-shadow:hover {
   transform: scale(1.1, 1.1);
