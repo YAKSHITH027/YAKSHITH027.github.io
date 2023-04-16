@@ -8,7 +8,6 @@ import {
   Image,
   Link,
   Text,
-  transform,
 } from '@chakra-ui/react'
 import React from 'react'
 import { FaGithub } from 'react-icons/fa'
