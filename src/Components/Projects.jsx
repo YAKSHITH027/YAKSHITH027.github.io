@@ -31,12 +31,11 @@ const Projects = () => {
       >
         {projectsList.map((item) => {
           return (
-            <Fade bottom>
+            <Fade bottom key={item.id}>
               <Box
                 className='project-card'
                 borderWidth={'2px'}
                 padding='0.5rem'
-                key={item.id}
                 borderRadius='md'
               >
                 <Box

@@ -40,25 +40,53 @@ const Contact = () => {
                 href='https://www.linkedin.com/in/p-yakshith-kulal-490b34227/'
                 isExternal
               >
-                <Flex gap='2'>
+                <Flex
+                  gap='4'
+                  py={'10px'}
+                  align={'center'}
+                  px='1.4rem'
+                  bg={'gray.600'}
+                  borderRadius={'md'}
+                >
                   <ImLinkedin fontSize={'1.6rem'} />
                   <Text id='contact-linkedin'>Linkedin</Text>
                 </Flex>
               </Link>
               <Link href='https://github.com/YAKSHITH027' isExternal>
-                <Flex gap='2'>
+                <Flex
+                  gap='4'
+                  py={'10px'}
+                  align={'center'}
+                  px='1rem'
+                  bg={'gray.600'}
+                  borderRadius={'md'}
+                >
                   <FaGithub fontSize={'1.6rem'} />
                   <Text id='contact-github'>Github</Text>
                 </Flex>
               </Link>
               <Link href='mailto:yakshith027@gmail.com' isExternal>
-                <Flex gap='2'>
+                <Flex
+                  gap='4'
+                  py={'10px'}
+                  align={'center'}
+                  px='1rem'
+                  bg={'gray.600'}
+                  borderRadius={'md'}
+                >
                   <HiOutlineMail fontSize={'1.6rem'} />
                   <Text id='contact-email'>Email</Text>
                 </Flex>
               </Link>
 
-              <Flex gap='2'>
+              <Flex
+                gap={{ base: '1', sm: '2', lg: '4' }}
+                py={'10px'}
+                align={'center'}
+                px={{ base: '0rem', sm: '4px', md: '8px', lg: '1rem' }}
+                bg={'gray.600'}
+                borderRadius={'md'}
+              >
                 <ImMobile fontSize={'1.6rem'} />
                 <Text id='contact-phone'>+91 8496080939</Text>
               </Flex>

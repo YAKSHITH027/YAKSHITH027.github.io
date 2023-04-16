@@ -2,6 +2,7 @@ import image1 from '../Images/image1.png'
 import image2 from '../Images/image2.png'
 import image3 from '../Images/image3.png'
 import image4 from '../Images/image4.png'
+import image5 from '../Images/image5.png'
 
 export const projectsList = [
   {
@@ -13,6 +14,16 @@ export const projectsList = [
     techStacks: ['react', 'redux', 'chakra ui', 'firebase'],
     desc: `it's a clone of Myntra, a website 
 for men's and women's clothing`,
+  },
+  {
+    id: 100,
+    name: 'Shopzen',
+    liveLink: 'https://shopez-seven.vercel.app/',
+    githubLink: 'https://github.com/YAKSHITH027/shopzen',
+    image: image5,
+    techStacks: ['react', 'redux', 'chakra ui', 'Node.js', 'MongoDB'],
+    desc: `it's a clone of DailyObjects, a website 
+for personal accessories`,
   },
   {
     id: 1,
