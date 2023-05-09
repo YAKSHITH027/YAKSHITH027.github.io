@@ -88,7 +88,7 @@ const About = () => {
                 gap='1'
                 width={{ base: 'full', md: '12rem' }}
               >
-                <Text>1200+hours</Text>
+                <Text>2000+hours</Text>
                 <Text textAlign={'center'}>full stack coding</Text>
               </Flex>
               <Flex
@@ -104,7 +104,7 @@ const About = () => {
                 gap='1'
               >
                 <Text>5+ Major Projects</Text>
-                <Text>30+ Mini Projects</Text>
+                <Text>40+ Mini Projects</Text>
               </Flex>
               <Flex
                 justify={'center'}
