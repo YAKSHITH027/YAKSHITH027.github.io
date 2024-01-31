@@ -7,7 +7,7 @@ import {
   Text,
   useColorMode,
 } from '@chakra-ui/react'
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import { MoonIcon, SunIcon, HamburgerIcon } from '@chakra-ui/icons'
 import Sidebar from './Sidebar'
 import { AiOutlineDownload } from 'react-icons/ai'
@@ -16,7 +16,13 @@ import Fade from 'react-reveal/Fade'
 import openInNewTab from '../utils/newTabOpener'
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode()
-
+  useLayoutEffect(() => {
+    if (colorMode == 'light') {
+      toggleColorMode()
+      localStorage.setItem('chakra-ui-color-mode', 'dark')
+    }
+    console.log('clolor', colorMode)
+  }, [])
   return (
     <Box
       id='nav-menu'
@@ -31,6 +37,7 @@ const Navbar = () => {
           height='4rem'
           align={'center'}
           transition={'all 1s'}
+          paddingTop={'1rem'}
         >
           <Box height='3.5rem' marginLeft={{ base: '2px', lg: '2rem' }}>
             <Link href='#'>
@@ -74,7 +81,7 @@ const Navbar = () => {
               colorScheme={'teal'}
               onClick={() =>
                 openInNewTab(
-                  'https://drive.google.com/file/d/1iRtaj8LV9l5y9-aiEVNRFC0KLz5Q-JMZ/view?usp=sharing'
+                  'https://drive.google.com/file/d/1IBK2C2nWYp304rSxzBDP6Z4dW8Phsase/view?usp=sharing'
                 )
               }
             >

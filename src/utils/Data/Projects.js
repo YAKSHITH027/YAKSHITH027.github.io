@@ -3,8 +3,18 @@ import image2 from '../Images/image2.png'
 import image3 from '../Images/image3.png'
 import image4 from '../Images/image4.png'
 import image5 from '../Images/image5.png'
+import image6 from '../Images/image6.png'
 
 export const projectsList = [
+  {
+    id: 554,
+    name: 'Rova ',
+    liveLink: 'https://rova-ykuv.vercel.app/',
+    githubLink: 'https://github.com/YAKSHITH027/Rova',
+    image: image6,
+    techStacks: ['Typescript', 'Next.js', 'Tailwand', 'Shadcn-UI'],
+    desc: `It's a fully functional LMS platform where user can post tutorials or purchase courses.`,
+  },
   {
     id: 4,
     name: 'Attirely ',
@@ -34,15 +44,6 @@ for personal accessories`,
     techStacks: ['react', 'chakra ui', 'firebase', 'json-servor'],
     desc: `it's a clone of bloomingdales, an online shopping site
 for men's and women's clothing`,
-  },
-  {
-    id: 12,
-    name: 'Shopify',
-    liveLink: 'https://chipper-creponne-aa2b3e.netlify.app/',
-    githubLink: 'https://github.com/YAKSHITH027/illustrious-feeling-7979',
-    image: image3,
-    techStacks: ['Javascript', 'CSS', 'HTML', 'json-servor'],
-    desc: `It is an e-commerce website for buying home appliances and other accessories `,
   },
   {
     id: 13,

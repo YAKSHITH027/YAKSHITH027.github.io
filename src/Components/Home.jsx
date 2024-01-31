@@ -33,8 +33,9 @@ const Home = () => {
           <Heading>Hello There 👋</Heading>
           <Heading id='user-detail-name'>I am Yakshith</Heading>
           <Text fontSize={'1.2rem'}>
-            A Passionate Full Stack Web Developer who's curious in tech field,
-            and now looking to start a career as an Web Developer.
+            Analytical and detail-oriented Full Stack Developer in MERN stack.
+            Aims to create world-class web applications while facilitating
+            organizations in achieving ambitious goals.
           </Text>
           <Text></Text>
           <Flex gap={'8'} align='center'>
@@ -42,7 +43,7 @@ const Home = () => {
               id='resume-button-2'
               onClick={() =>
                 openInNewTab(
-                  'https://drive.google.com/file/d/1iRtaj8LV9l5y9-aiEVNRFC0KLz5Q-JMZ/view?usp=sharing'
+                  'https://drive.google.com/file/d/1IBK2C2nWYp304rSxzBDP6Z4dW8Phsase/view?usp=sharing'
                 )
               }
               colorScheme={'teal'}

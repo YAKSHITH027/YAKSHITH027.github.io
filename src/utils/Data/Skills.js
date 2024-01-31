@@ -45,8 +45,20 @@ export const frontTechs = [
   {
     id: 8,
     name: 'Next js',
-    image: 'https://img.icons8.com/color/1x/nextjs.png',
+    image: 'https://img.icons8.com/?size=256&id=MWiBjkuHeMVq&format=png',
     boxShadow: '0px 4px 5px 0px rgba(150,156,158,1)',
+  },
+  {
+    id: 9,
+    name: 'Vue js',
+    image: 'https://img.icons8.com/?size=256&id=rY6agKizO9eb&format=png',
+    boxShadow: '0px 4px 5px 0px rgba(150,156,158,1)',
+  },
+  {
+    id: 10,
+    name: 'Tailwand',
+    image: 'https://img.icons8.com/?size=256&id=4PiNHtUJVbLs&format=png',
+    boxShadow: '0px 4px 3px 0px rgba(47,177,189,1)',
   },
 ]
 export const backendTechs = [
