@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Spinnaker
+- Font Author: Copyright (c) 2011, Sorkin Type Co (www.sorkintype.com eben@eyebytes.com) with Reserved Font Name "Spinnaker".
+- Font Source: http://fonts.gstatic.com/s/spinnaker/v19/w8gYH2oyX-I0_rvR6Hmn3HwLqOqSBg.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
